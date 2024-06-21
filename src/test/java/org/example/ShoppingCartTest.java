@@ -137,7 +137,7 @@ class ShoppingCartTest {
     void test_calculate_price_for_wine() {
         ShoppingCart shoppingCart = new ShoppingCart();
 
-        Product product = new Product(null, 5, false, null, null, "el tio juanillo", null);
+        Product product = new Product(null, 5, false, null, null, "The wine:", null);
 
         shoppingCart.addProduct(product);
 
@@ -149,7 +149,7 @@ class ShoppingCartTest {
     void test_calculate_price_for_cheese() {
         ShoppingCart shoppingCart = new ShoppingCart();
 
-        Product product = new Product(null, 5, true, null, null, "French Camembert", null);
+        Product product = new Product(null, 5, true, null, null, "the cheese:", null);
 
         shoppingCart.addProduct(product);
 
@@ -162,7 +162,7 @@ class ShoppingCartTest {
 
         BigDecimal bigDecimal = new BigDecimal(1);
 
-        Product product = new Product(null, null, false, "blue", bigDecimal, "Paquito", null);
+        Product product = new Product(null, null, false, "blue", bigDecimal, "Fish Blue", null);
 
         shoppingCart.addProduct(product);
 
@@ -175,7 +175,7 @@ class ShoppingCartTest {
 
         BigDecimal bigDecimal = new BigDecimal(1);
 
-        Product product = new Product(null, null, false, "gold", bigDecimal, "Brillantin", null);
+        Product product = new Product(null, null, false, "gold", bigDecimal, "Fish Gold", null);
 
         shoppingCart.addProduct(product);
 

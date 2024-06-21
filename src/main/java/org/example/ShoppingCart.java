@@ -63,7 +63,7 @@ public class ShoppingCart {
     }
 
     private BigDecimal cards(Product product){
-            if (product.getAge() != null && product.getAge() >= 10) {
+            if (product.getAge() != null && product.getAge() >= 10 && product.getAge()<= 19) {
                 return switch (product.getColor()) {
                     case "blue" -> BigDecimal.valueOf(5.0).multiply(BigDecimal.valueOf(0.50));
                     case "red" -> BigDecimal.valueOf(3.5).multiply(BigDecimal.valueOf(0.50));
