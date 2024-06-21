@@ -162,7 +162,7 @@ class ShoppingCartTest {
 
         BigDecimal bigDecimal = new BigDecimal(1);
 
-        Product product = new Product(null, null, false, "blue", bigDecimal, "Fish Blue", null);
+        Product product = new Product(null, null, false, "blue", bigDecimal, "The Fish: Blue", null);
 
         shoppingCart.addProduct(product);
 
@@ -175,7 +175,7 @@ class ShoppingCartTest {
 
         BigDecimal bigDecimal = new BigDecimal(1);
 
-        Product product = new Product(null, null, false, "gold", bigDecimal, "Fish Gold", null);
+        Product product = new Product(null, null, false, "gold", bigDecimal, "The Fish: Gold", null);
 
         shoppingCart.addProduct(product);
 
@@ -186,7 +186,7 @@ class ShoppingCartTest {
     void test_if_is_a_pet_the_price_is_4_2_by_legs() {
         ShoppingCart shoppingCart = new ShoppingCart();
 
-        Product product = new Product(4, null, false, null, null, "Dog", null);
+        Product product = new Product(4, null, false, null, null, "The Animal:", null);
 
         shoppingCart.addProduct(product);
 

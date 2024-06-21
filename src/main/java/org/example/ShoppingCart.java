@@ -20,17 +20,17 @@ public class ShoppingCart {
     }
 
     private BigDecimal calculatePrice(Product product) {
-        if (product.getNumberOfLegs() != null){
+        if (product.getName() != null && product.getName().startsWith("The Spider:")|| product.getName().startsWith("The Animal:")) {
             return petOfLegs(product);
         }
-        if (product.getName() != null) {
+        if (product.getName() != null && product.getName().startsWith("Magic: The Gathering")) {
             return cards(product);
         }
-        if (product.getAge()!=null){
-            return  gourmet(product);
-        }
-        if (product.getColor()!=null){
+        if (product.getColor() != null && product.getBasePrice() != null && product.getName().startsWith("The Fish")) {
             return calculateFish(product);
+        }
+        if (product.getAge() != null) {
+            return gourmet(product);
         }
 
         return product.getSellPrice();
