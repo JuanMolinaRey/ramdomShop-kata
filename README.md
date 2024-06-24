@@ -21,4 +21,4 @@ on the spider, 2 euros will be added for being red and 3 euros for being golden,
 - To calculate the value of the cards according to their age, we use an if accompanied by getAge to limit the age in the first case from 10 to 19 years and the second from older to 20, accompanied by a return switch with get.color for each color and so we add its base value multiplied by the decimal of the discount to get its price.
 - To calculate the value of the spider, we use an if with getName.StartsWith so that when it starts with "The Spider" the value of each leg is 1.2 euros
 - In the case of the spider color, we did the same as with the cards, if with switch.getColor to calculate the price by adding the base value multiplied by the decimal of the discount.
-
+- To calculate the discount depending on whether the spider is stinky, we used an if plus the stinky attribute, where we applied the discount depending on whether it was stinky and which is calculated in the same way as the previous cases.
