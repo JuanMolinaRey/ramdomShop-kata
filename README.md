@@ -1,4 +1,4 @@
-# KataFizz
+# KataRandomShop
 ## Kata description:
 ### 
 - Magic card modification. The age of Magic cards can influence their price. 
